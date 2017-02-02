@@ -1,0 +1,42 @@
+{
+  "name": "vue-superagent",
+  "version": "1.0.0",
+  "description": "A small wrapper for integrating superagent to Vuejs",
+  "main": "dist/vue-superagent.min.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/F-loat/vue-superagent.git"
+  },
+  "keywords": [
+    "vue",
+    "superagent",
+    "wrapper"
+  ],
+  "author": "F-loat <945852046@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/F-loat/vue-superagent/issues"
+  },
+  "homepage": "https://github.com/F-loat/vue-superagent#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifyjs": "^0.6.2"
+  },
+  "peerDependencies": {
+    "vue": ">= 1.0.0"
+  },
+  "dependencies": {
+    "superagent": "^3.4.1"
+  }
+}
