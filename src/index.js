@@ -1,20 +1,29 @@
-import superagent from 'superagent';
-
-(function () {
-
 /**
  * Install plugin
  * @param Vue
  * @param superagent
+ * @param superagent-use
+ * @param superagent-prefix
  */
 
-function plugin(Vue) {
+import superagent from 'superagent';
+import use from 'superagent-use';
+import prefix from 'superagent-prefix';
+
+function plugin(Vue, options) {
+  const baseUrl = options && options.baseUrl;
 
   if (plugin.installed) {
     return;
   }
 
-  Vue.superagent = superagent;
+  if (baseUrl) {
+    const agent = use(superagent);
+    agent.use(prefix(baseUrl));
+    Vue.superagent = agent;
+  } else {
+    Vue.superagent = superagent;
+  }
 
   Object.defineProperties(Vue.prototype, {
 
@@ -33,12 +42,4 @@ function plugin(Vue) {
   });
 }
 
-if (typeof exports == "object") {
-  module.exports = plugin;
-} else if (typeof define == "function" && define.amd) {
-  define([], function(){ return plugin });
-} else if (window.Vue && window.superagent) {
-  Vue.use(plugin, window.superagent);
-}
-
-})();
+export default plugin;

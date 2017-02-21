@@ -1,6 +1,6 @@
 {
   "name": "vue-superagent",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "A small wrapper for integrating superagent to Vuejs",
   "main": "dist/vue-superagent.min.js",
   "scripts": {
@@ -37,6 +37,8 @@
     "vue": ">= 1.0.0"
   },
   "dependencies": {
-    "superagent": "^3.4.1"
+    "superagent": "^3.4.1",
+    "superagent-prefix": "^0.0.2",
+    "superagent-use": "^0.1.0"
   }
 }
