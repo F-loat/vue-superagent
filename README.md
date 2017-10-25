@@ -1,9 +1,9 @@
 # vue-superagent
-> reference [vue-axios](https://github.com/imcvampire/vue-axios)
+[![npm package](https://img.shields.io/npm/v/vue-superagent.svg)](https://npmjs.org/package/vue-superagent)
+[![npm downloads](http://img.shields.io/npm/dm/vue-superagent.svg)](https://npmjs.org/package/vue-superagent)
 
-A small wrapper for integrating [superagent](https://github.com/visionmedia/superagent) to Vuejs
-
-[![NPM](https://nodei.co/npm/vue-superagent.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/vue-superagent/)
+> A small wrapper for integrating [superagent](https://github.com/visionmedia/superagent) to Vuejs
+ (reference [vue-axios](https://github.com/imcvampire/vue-axios))
 
 ## How to install:
 ### es6 module:
